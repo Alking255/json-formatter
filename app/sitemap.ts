@@ -1,7 +1,7 @@
-import { MetadataRoute } from 'next'
+import { MetadataRoute } from 'next';
 
 export default function sitemap(): MetadataRoute.Sitemap {
-    const baseUrl = 'https://your-domain.vercel.app'
+    const baseUrl = 'https://json-formatter-jet-five.vercel.app';
 
     return [
         {
@@ -10,11 +10,5 @@ export default function sitemap(): MetadataRoute.Sitemap {
             changeFrequency: 'weekly',
             priority: 1,
         },
-        {
-            url: `${baseUrl}/tools/json-to-typescript`,
-            lastModified: new Date(),
-            changeFrequency: 'monthly',
-            priority: 0.8,
-        },
-    ]
+    ];
 }

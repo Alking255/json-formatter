@@ -33,7 +33,7 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     locale: "en_US",
-    url: "https://your-domain.vercel.app",
+    url: "https://json-formatter-jet-five.vercel.app",
     title: "JSON Formatter - Free Online JSON Tool",
     description: "Format, validate, and beautify JSON instantly. Free online tool with tree view, error detection, and more.",
     siteName: "JSON Formatter",
@@ -56,7 +56,7 @@ export const metadata: Metadata = {
     google: "your-google-verification-code",
   },
   alternates: {
-    canonical: "https://your-domain.vercel.app",
+    canonical: "https://json-formatter-jet-five.vercel.app",
   },
 };
 
