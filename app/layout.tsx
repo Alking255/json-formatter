@@ -31,6 +31,7 @@ export const metadata: Metadata = {
       'max-snippet': -1,
     },
   },
+  applicationName: "JSON Formatter",
   openGraph: {
     type: "website",
     locale: "en_US",
@@ -59,6 +60,17 @@ export const metadata: Metadata = {
   alternates: {
     canonical: "https://json-formatter-jet-five.vercel.app",
   },
+  other: {
+    "google-site-verification": "your-google-verification-code",
+  },
+};
+
+const jsonLd = {
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "JSON Formatter",
+  "alternateName": ["JSON Beautifier", "JSON Validator"],
+  "url": "https://json-formatter-jet-five.vercel.app",
 };
 
 export default function RootLayout({
@@ -99,6 +111,10 @@ export default function RootLayout({
           async
           src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-XXXXXXXXXX"
           crossOrigin="anonymous"
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
         />
       </head>
       <body>
